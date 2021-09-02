@@ -8,7 +8,9 @@ import AppNavigator from '@/navigator'
 import store from '@/store'
 import { colors } from '@/constants'
 import { axiosInit } from '@/services/init'
-import '@/config/uiConfig'
+
+import '@/config/foundationConfig'
+import '@/config/componentsConfig'
 
 axiosInit()
 

@@ -22,7 +22,7 @@ const customColors = {
 
 for (const sizeKey in sizes) {
   customTypographies[sizeKey] = { fontSize: sizes[sizeKey], lineHeight: Math.floor(sizes[sizeKey] * 1.4) }
-  // customSpacings[sizeKey] = sizes[sizeKey] // <- check preset first 
+  customSpacings[sizeKey] = sizes[sizeKey] // <- check preset first 
 }
 
 for (const fontTypeKey in fontTypes) {
@@ -37,7 +37,4 @@ Colors.loadColors(customColors)
 
 Typography.loadTypographies(customTypographies)
 
-ThemeManager.setComponentTheme('Text', {
-  'regular': true,
-  'black': true
-})
+Spacings.loadSpacings(customSpacings)
