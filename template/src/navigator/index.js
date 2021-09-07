@@ -1,10 +1,9 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import { useSelector } from 'react-redux'
 
 import {
-	Home,
+	Example,
 } from '@/screens'
 
 import { AppTheme } from './config'
@@ -16,7 +15,7 @@ export default function AppNavigator () {
 	return <>
 		<NavigationContainer ref={navigationRef} theme={AppTheme}>
 			<Navigator screenOptions={{ headerShown: false }}>
-				<Screen name="Home" component={Home} />
+				<Screen name="Example" component={Example} />
 			</Navigator>
 		</NavigationContainer>
 	</>

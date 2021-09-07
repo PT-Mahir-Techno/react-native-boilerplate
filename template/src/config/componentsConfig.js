@@ -4,6 +4,7 @@ import { ThemeManager } from 'react-native-ui-lib'
 import { colors, sizes } from '@/constants'
 
 ThemeManager.setComponentTheme('Text', {
-  'regular': true,
-  'black': true
+  regular: true,
+  black: true,
+  body: true
 })
